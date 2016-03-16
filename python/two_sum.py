@@ -9,6 +9,6 @@ class Solution(object):
         for i in xrange(len(nums)):
             diff = target - nums[i]
             if diff in candidates:
-                return list((candidates[diff][0], i))
-            candidates[nums[i]] = (i, diff)
+                return list((candidates[diff], i))
+            candidates[nums[i]] = i
             
